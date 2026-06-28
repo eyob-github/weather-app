@@ -15,7 +15,7 @@ const forecastItemsContainer = document.querySelector(
   ".forecast-items-container",
 );
 
-const apiKey = "YOUR_API_KEY";
+const apiKey = "ef5ad8b3908c42ebf00d2625528e6fc8";
 
 searchBtn.addEventListener("click", searchWeather);
 
