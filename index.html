@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <main class="main-container">
+      <!-- Search -->
+      <header class="input-container">
+        <input
+          type="text"
+          class="city-input"
+          placeholder="Search city..."
+          aria-label="Search city"
+        />
+
+        <button class="search-btn" type="button" aria-label="Search">
+          <i class="bi bi-search"></i>
+        </button>
+      </header>
+
+      <!-- Weather Information -->
+      <section class="weather-info" style="display: none">
+        <!-- Location -->
+        <div class="location-data-container">
+          <div class="location">
+            <i class="bi bi-geo-alt-fill"></i>
+            <h4 class="country-text">Boston</h4>
+          </div>
+
+          <h5 class="current-date-txt regular-text">Sat, 26 June</h5>
+        </div>
+
+        <!-- Current Weather -->
+        <div class="weather-summary-container">
+          <img
+            src="./images/clouds.svg"
+            alt="Cloudy weather"
+            class="weather-summary-img"
+          />
+
+          <div class="weather-summary-info">
+            <h1 class="temp-text">29°C</h1>
+            <h3 class="condition-text regular-text">Cloudy</h3>
+          </div>
+        </div>
+
+        <!-- Weather Details -->
+        <div class="weather-conditions-container">
+          <div class="condition-item">
+            <i class="bi bi-droplet-fill"></i>
+
+            <div class="condition-info">
+              <h5 class="regular-text">Humidity</h5>
+              <h5 class="humidity-value-txt">55%</h5>
+            </div>
+          </div>
+
+          <div class="condition-item">
+            <i class="bi bi-wind"></i>
+
+            <div class="condition-info">
+              <h5 class="regular-text">Wind Speed</h5>
+              <h5 class="wind-value-txt">10 m/s</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Forecast -->
+        <div class="forecast-items-container">
+          <div class="forecast-item">
+            <h5 class="forecast-item-date regular-text">05 Aug</h5>
+            <img
+              src="./assets/weather/rain.svg"
+              alt="Rain"
+              class="forecast-item-image"
+            />
+            <h5 class="forecast-item-temp">29°C</h5>
+          </div>
+
+          <div class="forecast-item">
+            <h5 class="forecast-item-date regular-text">06 Aug</h5>
+
+            <img
+              src="./images/clouds.svg"
+              alt="Cloudy"
+              class="forecast-item-image"
+            />
+
+            <h5 class="forecast-item-temp">27°C</h5>
+          </div>
+
+          <div class="forecast-item">
+            <h5 class="forecast-item-date regular-text">07 Aug</h5>
+
+            <img
+              src="./images/clear.svg"
+              alt="Sunny"
+              class="forecast-item-image"
+            />
+
+            <h5 class="forecast-item-temp">31°C</h5>
+          </div>
+
+          <div class="forecast-item">
+            <h5 class="forecast-item-date regular-text">08 Aug</h5>
+
+            <img
+              src="./images/thunderstorm.svg"
+              alt="Thunderstorm"
+              class="forecast-item-image"
+            />
+
+            <h5 class="forecast-item-temp">25°C</h5>
+          </div>
+
+          <div class="forecast-item">
+            <h5 class="forecast-item-date regular-text">09 Aug</h5>
+
+            <img
+              src="./images/snow.svg"
+              alt="Snow"
+              class="forecast-item-image"
+            />
+
+            <h5 class="forecast-item-temp">12°C</h5>
+          </div>
+        </div>
+      </section>
+      <section class="search-city section-message">
+        <img src="./images/search-city.png" alt="" />
+        <h1>Search City</h1>
+        <h4 class="regular-txt">Find out the weather conditions of the city</h4>
+      </section>
+
+      <section class="not-found section-message" style="display: none">
+        <img src="./images/not-found.png" alt="" />
+        <h1>Search City</h1>
+        <h4 class="regular-txt">Find out the weather conditions of the city</h4>
+      </section>
+    </main>
+
+    <script src="./javascript/script.js"></script>
+  </body>
+</html>
